@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="file.css">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Activity</title>
+
+
+
+</head>
+
+<body>
+    <!-----------------------Nav bar--------------------------->
+    <div class="navibar">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <img src="logo.jpg" align=left alt="" width="390" height="90">
+                </a>
+
+                <ul>
+
+                    <li><a href="#logout">Log Out ></a></li>
+                    <li><a class="uname" href="#contact">@username</a></li>
+                    <li><a class="home" href="login.html">Home</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-------------------------------------- form-------------------------------------------->
+    <div class="wrapper rounded bg-white">
+
+        <div class="h3">Courses Registration Form</div>
+        <div class="form">
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3"> <label>PRN </label> <input type="text" class="form-control" readonly> </div>
+                <div class="col-md-6 mt-md-0 mt-3"> <label>COURSE</label> <select id="sub" required>
+                        <option value="" selected hidden>CHOOSE COURSE</option>
+                        <option value="BCOM">BCOM</option>
+                        <option value="BBA">BBA</option>
+                        <option value="IB">BBA-IB</option>
+                        <option value="CA">BBA-CA</option>
+                        <option value="MCOM">MCOM</option>
+                    </select> </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3"> <label>DIVISION</label> <select id="sub" required>
+                        <option value="" selected hidden>CHOOSE DIVISION</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+
+                    </select> </div>
+                <div class="col-md-6 mt-md-0 mt-3"> <label>YEAR</label>
+                    <div class="d-flex align-items-center mt-2"> <label class="option"> <input type="radio"
+                                name="radio">FY <span class="checkmark"></span> </label> <label class="option ms-4">
+                            <input type="radio" name="radio">SY <span class="checkmark"></span> </label>
+
+                        <label class="option ms-4">
+                            <input type="radio" name="radio">TY <span class="checkmark"></span> </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3"> <label> ACTIVITY</label> <select id="sub" required>
+                        <option value="" selected hidden>CHOOSE ACTIVITY</option>
+                        <option value="NCC">NCC</option>
+                        <option value="NSS">NSS</option>
+                        <option value="SPORTS">SPORTS</option>
+
+                    </select> </div>
+                <div class="col-md-6 mt-md-0 mt-3"> <label>ACADEMIC YEAR</label> <select id="sub" required>
+                        <option value="" selected hidden>CHOOSE YEAR</option>
+                        <option id="date1"></option>
+                        <option id="date2"> </option>
+                        <option id="date3"></option>
+                        <option id="date4"></option>
+                        <option id="date5"></option>
+
+                    </select> </div>
+                <div class=" my-md-2 my-3"><label></label>
+                    <div class="d-flex align-items-center mt-2"> <label class="option"> <input type="radio"
+                                name="radio">VALUE ADDED COURSE INTERNAL <span class="checkmark"></span> </label> <label class="option ms-4">
+                            <input type="radio" name="radio">VALUE ADDED COURSE EXTERNAL <span class="checkmark"></span>
+                        </label>
+
+
+                    </div>
+                </div>
+                <div class="btn btn-primary mt-3">Submit</div>
+            </div>
+        </div>
+
+
+
+        <script src="script.js"></script>
+</body>
+
+
+</html>

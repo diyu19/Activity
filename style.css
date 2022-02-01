@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #2980b9, navy);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+.center h1 {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.center form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .txt_field {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30 px 0;
+}
+
+.txt_field input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt_field span::before {
+    content: '';
+    position: absolute;
+    top: 73px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2691d9;
+    transition: .5s;
+}
+
+p {
+    padding-top: 20px;
+    margin-bottom: -10px;
+}
+
+.txt_field input:focus~label,
+.txt_field input:valid~label {
+    top: -5 px;
+    color: #2691d9;
+}
+
+.txt_field input:focus~span::before,
+.txt_field input:valid~span::before {
+    width: 100%;
+}
+
+.pass {
+    margin: -5px 0 20px 5px;
+    color: #a6a6a6;
+    cursor: pointer;
+}
+
+.pass:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #2691d9;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: #1b9af0
+}
+
+button:active {
+    background-color: #1b9af0;
+    box-shadow: 0 5px #1b9bf09f;
+    transform: translateY(4px);
+}
+
+button {
+    color: #e9f4fb;
+    text-decoration: none;
+}
+
+.signup_link {
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+}
+
+.signup_link a {
+    color: #2691d9;
+    text-decoration: none;
+}
+
+.signup_link a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    color: black;
+}
+
+.button1 {
+    border-radius: 8px;
+}
+
+.uname {
+    margin-right: 120px;
+    padding-left: 50px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    background-color: DodgerBlue;
+}
+
+.flex-container>div {
+    background-color: #f1f1f1;
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+    line-height: 65px;
+    font-size: 30px;
+}
+
+.banner {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: rgba(0, 0, 0, 0.37);
+}
+
+.banner-1 h1 {
+    color: white;
+    background-color: navy;
+    margin-left: 70px;
+    margin-right: 800px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.banner-2 {
+    color: white;
+    margin-top: -140px;
+    background-color: navy;
+    margin-left: 1000px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-right: 50px
+}
+
+.navibar {
+    background-color: white;
+}
+
+.navibar ul li a {
+    padding-bottom: 52px
+}
+
+.but1 {
+    padding: 10px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.label1 {
+    padding-top: 100px;
+}
